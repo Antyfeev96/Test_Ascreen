@@ -1,0 +1,203 @@
+/*RESET*/
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*==============================================================*/
+
+@font-face {
+    font-family: Circe; /* Имя шрифта */
+    src: url(fonts/circe-bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+.mountain-page {
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+}
+
+.aside-img {
+    width: 1100px;
+    z-index: 0;
+}
+
+.arrow-box {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 70px;
+    top: 946px;
+    z-index: 1;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 45px;
+    background: #EE8460;
+}
+
+.arrow {
+    width: 36px;
+    height: 38px;
+    fill: white;
+    margin: 17px 26px 17px 16px;
+}
+
+.arrow:hover {
+    width: 30px;
+    height: 32px;
+}
+
+.eclipses {
+    display: flex;
+    position: absolute;
+    top: 966px;
+    left: 481px;
+}
+
+.eclipse {
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px;
+    border: solid #FFFFFF;
+    width: 30px;
+    height: 30px;
+}
+
+.eclipse:hover {
+    background: gray;
+}
+
+.eclipse:nth-child(n + 2) {
+    margin-left: 24px;
+}
+
+
+.eclipse-active {
+    border: solid 16px #FFFFFF;
+}
+
+.fullscreen {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 946px;
+    left: 958px;
+    border-radius: 112px;
+    border: solid #2170A1;
+    background: #2170A1;
+}
+
+.full-svg {
+    margin: 8px;
+}
+
+.full-svg:hover {
+    margin: 0;
+    width: 105%;
+    height: 105%;
+}
+
+article {
+    width: 820px;
+    background-color: #2170A1;
+}
+
+h1 {
+    position: absolute;
+    width: 457px;
+    height: 94px;
+    left: 1180px;
+    top: 134px;
+
+    font-family: Circe, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: 0.015em;
+    font-feature-settings: 'kern' off;
+
+    color: #FFFFFF;
+}
+
+.text-container {
+    position: absolute;
+    width: 632px;
+    height: 611px;
+    left: 1179px;
+    top: 253px;
+
+    font-family: Circe, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+p:first-of-type {
+    margin-bottom: 15px;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    top: 959px;
+    left: 1226px;
+}
+
+.svg-home {
+    width: 50px;
+    height: 40px;
+}
+
+.svg-home:nth-child(n + 2) {
+    margin-left: 23px
+}
+
+.svg-home:hover {
+    fill: white;
+}
+

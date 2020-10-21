@@ -1,0 +1,122 @@
+/*RESET*/
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*==============================================================*/
+
+.exit-arrow-box {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 70px;
+    top: 946px;
+}
+
+.exit-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 45px;
+    background: #EE8460;
+}
+
+.exit-arrow {
+    width: 36px;
+    height: 38px;
+    fill: white;
+    margin: 17px 26px 17px 16px;
+}
+
+.exit-arrow:hover {
+    width: 30px;
+    height: 32px;
+}
+
+.exit-eclipses {
+    display: flex;
+    position: absolute;
+    top: 966px;
+    left: 911px;
+}
+
+.exit-eclipse {
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px/50px;
+    border-radius: 50px;
+    border: solid #FFFFFF;
+    width: 30px;
+    height: 30px;
+}
+
+.exit-eclipse:hover {
+    background: gray;
+}
+
+.exit-eclipse:nth-child(n + 2) {
+    margin-left: 24px;
+}
+
+.exit-eclipse-active {
+    border: solid 16px #FFFFFF;
+}
+
+.fullscreen-exit {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 946px;
+    right: 80px;
+    border-radius: 112px;
+    border: solid #2170A1;
+    background: #2170A1;
+}
+
+.exit-svg {
+    margin: 15px 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.exit-svg:hover {
+    margin: 10px 8px;
+    width: 50px;
+    height: 50px;
+}

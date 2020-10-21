@@ -1,0 +1,501 @@
+/*RESET*/
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    overflow-y:hidden;
+    overflow-x:hidden
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none
+}
+
+/*==============================================================*/
+
+/*body {*/
+/*    background: url(img/map.jpg) 100% 100% no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+@font-face {
+    font-family: Circe; /* Имя шрифта */
+    src: url(fonts/circe-bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+.map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.element {
+    position: absolute;
+    display: inline-block;;
+}
+
+.elem1 {
+    position: absolute;
+    width: 312px;
+    height: 240px;
+    left: 1007px;
+    top: 25px;
+}
+
+.mount1 {
+    width: 312px;
+    height: 185px;
+}
+
+.elem-text1 {
+    width: 200px;
+    height: 45px;
+    background: #87B0BA;
+    border-radius: 25px;
+    margin-right: 58px;
+    margin-left: 54px;
+    padding: 7px 33px 3px 32px;
+}
+
+.text {
+    font-family: Circe, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+.elem2 {
+    position: absolute;
+    width: 248px;
+    height: 192px;
+    left: 437px;
+    top: 236px;
+}
+
+.mount2 {
+    width: 248px;
+    height: 136px;
+}
+
+.elem-text2 {
+    width: 190px;
+    height: 45px;
+    background: #87B0BA;
+    border-radius: 25px;
+    margin-right: 29px;
+    margin-left: 29px;
+    padding: 7px 20px 3px;
+}
+
+.elem3 {
+    position: absolute;
+    width: 245px;
+    height: 197px;
+    left: 283px;
+    top: 398px;
+}
+
+.mount3 {
+    width: 245px;
+    height: 142px;
+}
+
+.elem-text3 {
+    width: 200px;
+    height: 45px;
+    background: #87B0BA;
+    border-radius: 25px;
+    margin-right: 23px;
+    margin-left: 22px;
+    padding: 7px 29px 3px 30px;
+}
+
+.elem4 {
+    position: absolute;
+    width: 245px;
+    height: 197px;
+    left: 554px;
+    top: 398px;
+}
+
+.mount4 {
+    width: 224px;
+    height: 142px;
+}
+
+.elem-text4 {
+    width: 245px;
+    height: 45px;
+    background: #87B0BA;
+    border-radius: 25px;
+    padding: 7px 22px 3px 21px;
+}
+
+.elem5 {
+    position: absolute;
+    width: 313px;
+    height: 241px;
+    left: 794px;
+    top: 295px;
+}
+
+.mount5 {
+    width: 313px;
+    height: 186px;
+}
+
+.elem-text5 {
+    width: 260px;
+    height: 45px;
+    background: #87B0BA;
+    border-radius: 25px;
+    margin-right: 28px;
+    margin-left: 25px;
+    padding: 7px 27px 3px;
+}
+
+.elem6 {
+    position: absolute;
+    width: 332px;
+    height: 205px;
+    left: 636px;
+    top: 551px;
+}
+
+.mount6 {
+    width: 332px;
+    height: 150px;
+}
+
+.elem-text6 {
+    width: 260px;
+    height: 45px;
+    background: #87B0BA;
+    border-radius: 25px;
+    margin-right: 31px;
+    margin-left: 31px;
+    padding: 7px 24px 3px 23px;
+}
+
+.elem7 {
+    position: absolute;
+    width: 230px;
+    height: 187px;
+    left: 600px;
+    top: 771px;
+}
+
+.mount7 {
+    width: 229px;
+    height: 132px;
+}
+
+.elem-text7 {
+    width: 230px;
+    height: 45px;
+    background: #87B0BA;
+    border-radius: 25px;
+    padding: 7px 26px 3px 27px;
+}
+
+.elem8 {
+    position: absolute;
+    width: 295px;
+    height: 214px;
+    left: 951px;
+    top: 814px;
+}
+
+.mount8 {
+    width: 295px;
+    height: 159px;
+}
+
+.elem-text8 {
+    width: 260px;
+    height: 45px;
+    background: #87B0BA;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-left: 15px;
+    padding: 7px 17px 3px 23px;
+}
+
+.mountain-page {
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+}
+
+.aside-img {
+    width: 1100px;
+    z-index: 0;
+}
+
+.arrow-box {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 70px;
+    top: 946px;
+    z-index: 1;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 45px;
+    background: #EE8460;
+}
+
+.arrow {
+    width: 36px;
+    height: 38px;
+    fill: white;
+    margin: 17px 26px 17px 16px;
+}
+
+.arrow:hover {
+    width: 30px;
+    height: 32px;
+}
+
+.eclipses {
+    display: flex;
+    position: absolute;
+    top: 966px;
+    left: 481px;
+}
+
+.eclipse {
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px;
+    border: solid #FFFFFF;
+    width: 30px;
+    height: 30px;
+}
+
+.eclipse:hover {
+    background: gray;
+}
+
+.eclipse:nth-child(n + 2) {
+    margin-left: 24px;
+}
+
+
+.eclipse-active {
+    background: white;
+}
+
+.fullscreen {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 946px;
+    left: 958px;
+    border-radius: 112px;
+    border: solid #2170A1;
+    background: #2170A1;
+}
+
+.full-svg {
+    margin: 8px;
+}
+
+.full-svg:hover {
+    margin: 0;
+    width: 105%;
+    height: 105%;
+}
+
+.description {
+    width: 820px;
+    background-color: #2170A1;
+}
+
+.title {
+    position: absolute;
+    width: 465px;
+    height: 94px;
+    left: 1180px;
+    top: 134px;
+
+    font-family: Circe, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: 0.015em;
+    font-feature-settings: 'kern' off;
+
+    color: #FFFFFF;
+}
+
+.text-container {
+    position: absolute;
+    width: 632px;
+    height: 611px;
+    left: 1179px;
+    top: 253px;
+
+    font-family: Circe, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+p:first-of-type {
+    margin-bottom: 15px;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    top: 959px;
+    left: 1226px;
+}
+
+.svg-home {
+    width: 50px;
+    height: 40px;
+}
+
+.svg-home-active {
+    fill: white;
+}
+
+.svg-home:nth-child(n + 2) {
+    margin-left: 23px
+}
+
+.svg-home:hover {
+    fill: grey;
+}
+
+.arrow-exit-box {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 70px;
+    top: 946px;
+}
+
+.exit-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 45px;
+    background: #EE8460;
+}
+
+.exit-arrow {
+    width: 36px;
+    height: 38px;
+    fill: white;
+    margin: 17px 26px 17px 16px;
+}
+
+.exit-arrow:hover {
+    width: 30px;
+    height: 32px;
+}
+
+.exit-eclipses {
+    display: flex;
+    position: absolute;
+    top: 966px;
+    left: 911px;
+}
+
+.exit-eclipse {
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px/50px;
+    border-radius: 50px;
+    border: solid #FFFFFF;
+    width: 30px;
+    height: 30px;
+}
+
+.exit-eclipse:hover {
+    background: gray;
+}
+
+.exit-eclipse:nth-child(n + 2) {
+    margin-left: 24px;
+}
+
+.exit-eclipse-active {
+    border: solid 16px #FFFFFF;
+}
+
+.fullscreen-exit {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 946px;
+    right: 80px;
+    border-radius: 112px;
+    border: solid #2170A1;
+    background: #2170A1;
+}
+
+.exit-svg {
+    margin: 15px 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.exit-svg:hover {
+    margin: 10px 8px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
